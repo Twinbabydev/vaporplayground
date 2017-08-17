@@ -1,0 +1,15 @@
+#extend("master")
+
+#export("head") {
+    #import("title")
+}
+
+#export("body") {
+    #loop(users, "user") {
+        <h1>Hello #(user.name)</h1>
+
+        #if(user.name = "Paja") {
+            <p>Hiii</p>
+        }
+    }
+}

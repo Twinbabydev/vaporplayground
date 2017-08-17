@@ -1,0 +1,13 @@
+#extend("master")
+
+#export("head") {
+    #embed("title")
+}
+
+#export("body") {
+    #if(myBool) {
+        <p>YES #raw() { #youareawesome } </p>
+    } ##else() {
+        <p>NO</p>
+    }
+}
